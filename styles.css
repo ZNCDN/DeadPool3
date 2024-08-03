@@ -1,45 +1,110 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+/* Reset beberapa elemen dasar */
+body, h1, p {
     margin: 0;
+    padding: 0;
 }
 
-.container {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #121212; /* Latar belakang gelap */
+    color: #e0e0e0; /* Warna teks */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
 }
 
-.player img {
+.logo img {
+    max-width: 150px;
+}
+
+main {
+    padding: 20px;
+}
+
+.fake-player {
+    background-color: #1e1e1e;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.player {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+}
+
+.player-image {
     width: 100%;
     border-radius: 8px;
 }
 
-.watch-button {
-    margin: 20px 0;
-}
-
-.watch-button button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #007bff;
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
     color: #fff;
-    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 50%;
     cursor: pointer;
 }
 
-.watch-button button:hover {
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.watch-now {
+    background-color: #007bff;
+}
+
+.watch-now:hover {
     background-color: #0056b3;
 }
 
-.review {
-    text-align: left;
+.download-now {
+    background-color: #28a745;
+}
+
+.download-now:hover {
+    background-color: #218838;
+}
+
+.article {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
